@@ -1,0 +1,24 @@
+#sidebar {
+    position:relative;
+    top:50px; bottom:0; left:50px;
+
+    background:#fff;
+}
+a:visited
+{
+color:#FF0000
+}
+
+#crop {
+  width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline;
+}
+
+
+h3 {
+  padding: 1em;
+  text-align: center;
+}

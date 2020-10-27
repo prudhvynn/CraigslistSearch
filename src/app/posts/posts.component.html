@@ -1,0 +1,23 @@
+<div class="container">
+  <h3>Search in Craigslist Toronto</h3>
+  <div class="input-group">
+    <input #search
+      type="text"
+      placeholder="Search"
+      (keyup)="searchPosts(search.value)"
+      class ="form-control"
+      id="searchphrase"
+      autocomplete="off"
+    > 
+    <span class="input-group-btn">
+      <button type="submit" class="btn btn-success" (click)="goToResults(search.value)">Search</button>
+    </span>
+    <br>
+  </div>
+<ng-container *ngIf="(blogPosts$ | async) as posts">
+  <p>number of posts for {{value}}: {{posts.length}} </p>
+<br>
+</ng-container>
+</div>
+
+
